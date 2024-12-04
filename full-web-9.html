@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        .pro img {}
+
+        .begin .pro {
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .begin .container-flex {
+            margin-top: 10%;
+            margin-left: 2%;
+        }
+
+
+        .begin .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 98%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .begin .login-button {
+            color: aliceblue;
+            background-color: green;
+            padding: 15px;
+        }
+
+        .begin nav {
+            position: fixed;
+            margin-top: 0px;
+            z-index: 1;
+            border-bottom: solid 1px white;
+            background-color: #706e6edc;
+        }
+
+        .begin .nav-link {
+            transition: transform 0.3s ease;
+            color: white;
+            font-size: large;
+
+        }
+
+        .begin .nav-link:hover {
+            transform: scale(1.1);
+            background-color: rgb(40, 107, 40);
+            color: white;
+        }
+
+        .begin .navbar-brand {
+            margin-left: 50px;
+        }
+
+        .begin .col .bt1 {
+            padding: 15px;
+            width: 15%;
+            background-color: green;
+            color: #ffffff;
+            border: transparent;
+            border-radius: 4px;
+
+        }
+
+        .begin .col .bt2 {
+            padding: 15px;
+            width: 15%;
+            background-color: transparent;
+            color: #ffffff;
+            border: #ffffff solid 1px;
+            border-radius: 4px;
+        }
+
+        .begin .col .bt2:hover {
+            background-color: rgb(70, 70, 70);
+            border: transparent
+        }
+
+
+        @media (max-width: 425px) {
+            .begin .video-background {
+                margin-top: 0px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 64%;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+
+            .begin img {
+                width: 88px;
+                height: 22px;
+            }
+
+            .begin .container-flex {
+                margin-top: 30%;
+
+            }
+
+            .begin .pro {
+
+                margin-top: 30px;
+
+            }
+
+            .begin img {
+                height: 10%;
+            }
+
+            .begin .login-button {
+                padding: 10px;
+                margin-left: 30px;
+
+                font-size: x-small;
+
+            }
+
+            .begin .navbar-brand {
+                margin-left: 1px;
+            }
+
+            .begin .col .bt1 {
+                margin-left: 8px;
+                padding: 5px;
+                width: 150px;
+                background-color: green;
+                color: #ffffff;
+                border: transparent;
+                border-radius: 4px;
+                
+
+            }
+
+            .begin .col .bt2 {
+                padding: 5px;
+                width: 150px;
+                background-color: transparent;
+                color: #ffffff;
+                border: #ffffff solid 1px;
+                border-radius: 4px;
+                font-size: 25px;
+            }
+
+            .begin .col .bt2:hover {
+                background-color: rgb(70, 70, 70);
+                border: transparent;
+
+            }
+
+
+
+
+        }
+
+
+        .pro img {}
+
+
+
+        .second .contaier-fluid {
+            margin: 20px;
+        }
+
+        @media (max-width: 425px) {
+            .gray-btn {
+                background-color: #706e6e;
+                border: 2px solid #706e6e;
+                color: white;
+                font-size: 1.2rem;
+                border-radius: 4px;
+                padding-top: -10%;
+
+
+
+            }
+
+            .green-btn {
+                background-color: #07700a;
+                border: 2px solid #07700a;
+                color: white;
+                font-size: 1.2rem;
+                border-radius: 4px;
+                padding-bottom: 0%;
+                text-transform: uppercase;
+
+            }
+
+            .second .container {
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+
+
+
+        .green-btn:hover {
+            background-color: white;
+            color: #07700a;
+
+        }
+
+        .gray-btn:hover {
+            background-color: white;
+            color: #706e6e;
+
+        }
+
+        .gray-btn {
+            background-color: #706e6e;
+            border: 2px solid #706e6e;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            padding: 2.5%;
+
+        }
+
+        .green-btn {
+            background-color: #07700a;
+            border: 2px solid #07700a;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            padding: 2.5%;
+            text-transform: uppercase;
+
+        }
+
+        .first .btn-next:hover {
+            background-color: white;
+            color: green;
+        }
+
+
+        .first .btn-next {
+            background-color: green;
+            width: 8rem;
+            height: 3rem;
+            padding: 10px;
+            margin: 20px;
+            color: white;
+            border-radius: 4px;
+            border: 2px solid green;
+
+
+
+        }
+
+
+        .heading {
+            color: green;
+
+        }
+
+        p {
+            font-size: 1.3rem;
+
+        }
+
+
+        .first {
+            border: 4px solid green;
+            padding: 5px;
+            background-color: white;
+            margin-top: auto;
+
+            margin: 10px;
+        }
+
+        .first input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: green;
+            margin-top: 10px;
+        }
+
+        .first .row {
+
+            padding: 5px;
+            gap: 25px;
+        }
+
+        .first .col-sm {
+            width: 600px;
+            height: 100px;
+            box-shadow: 0 0 5px gray;
+            padding-top: 25px;
+        }
+
+
+
+        @media(min-width:768px) {
+
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+
+            }
+
+            .four .container-fluid {
+                display: flex;
+                width: 100%;
+
+
+            }
+
+            .four .side-menu {
+
+
+                padding: 20px;
+
+                width: 800px;
+                height: 100%;
+
+                padding: 20px;
+                position: sticky;
+                transition: width 0.2s;
+            }
+
+            .four .side-menu ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .four .side-menu li {
+                color: gray;
+
+                align-items: center;
+
+                text-decoration: none;
+                border-radius: 5px;
+
+                padding: 10px;
+                margin: 5px 0;
+                cursor: pointer;
+                transition: transform 0.3s, background-color 0.3s;
+            }
+
+            .four .side-menu li:hover {
+                background-color: green;
+                transform: scale(1.05);
+                color: white;
+
+            }
+
+            .four .image-card {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .four .image-card img {
+
+
+                max-width: 100%;
+                height: auto;
+
+
+                margin-bottom: 10px;
+            }
+
+            .four .image-card h2 {
+                margin: 10px 0;
+            }
+
+            .four .image-card p {
+                color: #555;
+            }
+
+            .four .hhh h3 {
+                text-align: center;
+                font-weight: bold;
+
+            }
+
+
+        }
+
+        .four .btn {
+            padding: 20px;
+            margin-bottom: 70px;
+            background-color: green;
+            color: white
+        }
+
+        .four {
+
+            background-color: rgb(235, 235, 235);
+        }
+
+
+        @media(max-width:425px) {
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .four .container-fluid {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .four .side-menu {
+                width: 100%;
+
+                padding: 10px 20px;
+
+
+
+
+            }
+
+            .four .side-menu ul {
+                list-style: none;
+                padding: 0;
+
+
+                max-height: 90px;
+                border: transparent;
+                display: flex;
+                overflow-x: auto;
+
+
+            }
+
+            .four .side-menu ul ::-webkit-scrollbar {
+                width: 0;
+            }
+
+            .four .side-menu li {
+                flex: 1;
+                padding: 10px;
+                margin: 5px;
+                cursor: pointer;
+                transition: transform 0.3s, background-color 0.3s;
+                text-align: center;
+
+
+
+            }
+
+            .four .side-menu li:hover {
+                transform: scale(1.1);
+                background-color: rgb(211, 230, 211);
+
+            }
+
+            .four .image-card {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .four .image-card img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #ccc;
+
+                margin-bottom: 10px;
+            }
+
+            .four .image-card h2 {
+                margin: 10px 0;
+            }
+
+            .four .image-card p {
+                color: #555;
+            }
+
+            .four .hhh h3 {
+                text-align: start;
+                padding: 20px;
+                font-size: 22px;
+                font-weight: bold;
+
+            }
+
+
+
+        }
+
+
+
+        .five .container-fluid {
+            padding: 25px;
+        }
+
+
+
+        .five .les {
+            margin-top: 60px;
+
+        }
+
+        .five .les img {
+            border-radius: 100px;
+            align-items: start;
+        }
+
+        .five .lm {
+            margin-left: 150px;
+            margin-top: -120px;
+        }
+
+        .five .row {
+            row-gap: 20px;
+        }
+
+        .five .vid {
+            margin-top: 40px;
+            display: flex;
+        }
+
+        @media(max-width:425px) {
+            .five .tri {
+                display: flex;
+                gap: 6px;
+                margin-top: 10px;
+                padding-right: 6px;
+                height: 60px;
+
+
+            }
+
+            .five h4 {
+                color: rgb(15, 109, 15);
+                text-align: start;
+                margin-top: 20px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+        }
+
+        @media(min-width:768px) {
+            .five .tri {
+                display: flex;
+                gap: 9px;
+                margin-top: 10px;
+                padding-right: 6px;
+
+
+            }
+
+            .five h4 {
+                color: rgb(15, 109, 15);
+                text-align: start;
+                margin-top: 60px;
+                font-size: 35px;
+                font-weight: 600;
+            }
+
+        }
+
+
+        @media (min-width: 768px) {
+
+            .six img {
+                width: 150px;
+                height: 50px;
+                margin: 20px;
+
+            }
+
+            .six .col-4 .img-fluid-4 {
+                height: 60px;
+                width: 120px;
+            }
+
+
+
+
+        }
+
+        @media (max-width: 425px) {
+            .six img {
+                width: 100px;
+                height: 50px;
+            }
+
+
+            .six .row {
+                row-gap: 15px;
+            }
+
+            .six .col-4 .img-fluid-4 {
+                width: 80px;
+                height: 50px;
+
+            }
+
+            .six .container-flex {
+                margin: 10px;
+            }
+
+        }
+
+
+        .seven a {
+            color: rgb(11, 110, 11);
+
+        }
+
+        .seven .col-box {
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .seven .row {
+            row-gap: 50px;
+        }
+
+        .seven .con {
+            margin-top: -200px;
+        }
+
+        @media (max-width: 425px) {
+            .seven .con {
+                margin-top: 30px;
+                height: auto;
+            }
+
+
+        }
+
+
+        .eight {}
+
+        .eight .container-fluid {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: space-between;
+
+            margin: 1px;
+        }
+
+        .eight .col-12 {
+            padding: 10px;
+
+        }
+
+        .eight img {
+            height: 365px;
+            width: 410px;
+        }
+
+        .eight a {
+            color: rgb(102, 133, 102);
+            font-size: 1.3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .eight h1 {
+            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        @media (min-width: 768px) {
+            .eight h1 {
+                text-transform: uppercase;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30%;
+            }
+
+        }
+
+
+
+
+
+
+        .nine .col-box {
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nine.row {
+            row-gap: 50px;
+        }
+
+        .bit {
+            margin-top: 20px;
+            margin: 20px;
+        }
+
+        @media (max-width: 420px) {
+            .bit {
+                margin-top: 5px;
+            }
+
+
+        }
+
+        footer {
+            background-color: green;
+
+            color: white;
+
+            padding: 20px;
+
+            margin-top: -20px;
+        }
+
+        .search-container {
+            position: relative;
+
+            width: 100%;
+
+            margin-bottom: 20px;
+
+
+        }
+
+        .search-bar {
+            background-color: rgb(34, 30, 30);
+
+            color: white;
+
+            padding: 10px 40px 10px 40px;
+
+            width: 100%;
+
+            border: none;
+
+            height: 7rem;
+            font-size: 3rem;
+        }
+
+        .search-icon {
+            position: absolute;
+
+            left: 10px;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            color: rgb(247, 241, 241);
+
+        }
+
+        .footer-column {
+            transition: transform 0.3s;
+
+
+        }
+
+        .footer-column:hover {
+            transform: scale(1.05);
+
+            color: white;
+
+        }
+
+        .footer-column {
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        .footer-column li:hover {
+
+            color: rgb(15, 66, 15);
+        }
+
+        .go img {
+            width: 265px;
+            height: 59.5px;
+            margin: 40px;
+
+
+        }
+
+        .icon {
+            font-size: 1.5REM;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="begin">
+        <video class="video-background" autoplay muted loop>
+            <source src="https://www.gofleet.com/wp-content/uploads/2023/05/BANNER-V11-1-2-1.webm" type="video/mp4">
+            .
+        </video>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#"><img
+                        src="https://www.gofleet.com/wp-content/uploads/2023/06/gofleet-white.png" width="200px"
+                        height="50px"></a>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">gofleet</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-md-4" href="#">Product +</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-md-4" href="#">Industries +</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-md-4" href="#">Resources +</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-md-4" href="#">Company +</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="login-button"><strong> START FREE TRIAL</strong></div>
+                &nbsp;&nbsp;&nbsp;
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
+            </div>
+        </nav>
+
+
+
+        <div class="container-flex text-start">
+            <div class="row">
+                <div class="col">
+                    <h4 style="color: rgb(243, 247, 243);">#1 Fleet Management Software</h4>
+                    <h1 style="color: rgb(243, 247, 243); "><strong> One platform for</strong></h1>
+                    <h1 style="color: rgb(42, 110, 42); "><strong>asset management</strong></h1>
+
+                    <h4 style="color: rgb(243, 247, 243);">Powerful Fleet Telematics Trusted in over</h4>
+                    <h4 style="color: rgb(243, 247, 243);">3 Million Vehicles.</h4>
+
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <button type="button" class="bt1">
+                        <h5>GET A QOTE </h5>
+                    </button>
+                    &nbsp;&nbsp;
+                    <button type="button" class="bt2">
+                        <h5> BOOK A DEMO</h5>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="pro">
+
+
+
+                <img src="https://www.gofleet.com/wp-content/themes/dm-go-theme-2023/inc/assets/img/stars-4-gold.png"
+                    width="96.97rem" height="19.26rem">
+                <h4 style="color: rgb(59, 61, 59);">Based on hundreds of reviews on</h4>
+
+
+                <img src="https://www.gofleet.com/wp-content/themes/dm-go-theme-2023/inc/assets/img/google.png"
+                    width="89px" height="29" alt="">
+
+            </div>
+    </section>
+
+
+    <br><br><br>
+
+
+    <section class="first">
+        <div class="container">
+            <hr style="height: 10px" />
+            <h3 style="color: green; display: flex; justify-content: center">
+                To help us better understand you needs, what type(s) of assets are you
+                working with?
+            </h3>
+            <div class="row">
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/car.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px">
+                        <b>Cars/Vans/Pick-Up</b>
+                    </h6>
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/van-trucks.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px">
+                        <b>Heavy Trucks</b>
+                    </h6>
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/bus.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px"><b>Buses</b></h6>
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/trailers.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px">
+                        <b>Trailers</b>
+                    </h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/electric-vehicles.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px">
+                        <b>Electric Vehicles</b>
+                    </h6>
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/small-assets.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px">
+                        <b>Small Assets</b>
+                    </h6>
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/people.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px"><b>People</b></h6>
+                </div>
+                <div class="col-sm">
+                    <input type="checkbox" />
+                    <img
+                        src="https://www.gofleet.com/wp-content/plugins/dm-go-zoho-forms/assets/images/surveys/green/assets/others.png?ver=3.08.11" />
+                    <h6 style="margin-left: 120px; margin-top: -25px"><b>Other</b></h6>
+                </div>
+
+            </div>
+            <div style="text-align: center;">
+
+                <button class="btn-next"><strong>NEXT</strong></button>
+            </div>
+
+        </div>
+    </section>
+    <br><br>
+    <section class="second">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/09/gps-fleet-tracking-64f8317e76bfa-762x431.webp"
+                        alt="Image 1" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h1>GPS FLEET TRACKING</h1>
+                    </div>
+                    <p>
+                        Meet the most accurate and real-time GPS fleet trackers. Now
+                        powered with industry-specific features for everyday fleet and
+                        everyday crew. Our GPS fleet tracking system is easy to use,
+                        making it easy to save. The trusted choice for 3.5 million
+                        vehicles globally.
+                    </p>
+                    <div class="container text-center ">
+                        <div class="row">
+                            <div class="col-md-6" style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="green-btn"><strong>TRACK YOUR FLEET</strong></button>
+                            </div>
+                            <div class="col-md-6  " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="gray-btn"><strong>
+                                        CHECK PRICING</strong></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/dash-camera-ai-762x461.png"
+                        alt="Image 2" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h1 class="order-md-1">Fleet Dash camera & ai</h1>
+                    </div>
+                    <p>
+                        Best-in-class intelligent cloud-based telematics platform
+                        solutions that engage the power of AI, advanced driver-assistance
+                        systems (ADAS), and Face AI to increase the safety, efficiency,
+                        and sustainability of your fleet operations on the move.
+                    </p>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-6 " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="green-btn"><strong>See it in action</strong></button>
+                            </div>
+                            <div class="col-md-6  " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="gray-btn"><strong>
+                                        CHECK PRICING</strong></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/eld-driver-apps-719x550.png"
+                        alt="Image 3" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h1>ELD & Driver apps</h1>
+                    </div>
+                    <p>
+                        Comprehensive ELD solutions for organizations to automate their
+                        time tracking, reporting, and compliance management of drivers and
+                        back-office employees while making it easier for them to manage,
+                        collect, and analyze critical employee data.
+                    </p>
+                    <div class="container text-center ">
+                        <div class="row">
+                            <div class="col-md-6 " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="green-btn"><strong>Manage Compliance</strong></button>
+                            </div>
+                            <div class="col-md-6  " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="gray-btn"><strong>
+                                        GET A QUEATE</strong></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/asset-monitoring-762x430.png"
+                        alt="Image 4" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h1>Asset monitoring & COLD CHAIN</h1>
+                    </div>
+                    <p>
+                        An intelligent suite of Asset and Cold chain monitoring solutions
+                        that combines the expertise of asset tracking and temperature
+                        monitoring domains helping organizations to save on asset
+                        monitoring costs and ensure adherence to product quality
+                        standards.
+                    </p>
+                    <div class="container text-center ">
+                        <div class="row">
+                            <div class="col-md-6 " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="green-btn"><strong>Track Assets</strong></button>
+                            </div>
+                            <div class="col-md-6  " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="gray-btn"><strong>
+                                        CHECK PRICING</strong></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/field-work-management-762x431.png"
+                        alt="Image 5" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h1>Field Work management</h1>
+                    </div>
+                    <p>
+                        Effectively schedule, track, and manage multiple job orders in
+                        real-time to preserve your business continuity while leaning into
+                        cost optimization. Enable managers to track field staff and asset
+                        movements across the globe..
+                    </p>
+                    <div class="container text-center ">
+                        <div class="row">
+                            <div class="col-md-6 " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="green-btn"><strong>Improve Productivity</strong></button>
+                            </div>
+                            <div class="col-md-6  " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="gray-btn"><strong>
+                                        CHECK PRICING</strong></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/maintenance-work-762x446.png"
+                        alt="Image 6" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h1>Maintenance work order management</h1>
+                    </div>
+                    <p>
+                        Streamline and optimize complex maintenance work processes.
+                        Effectively track and manage all your equipment and its
+                        maintenance schedule under one roof. Access historical data, cost,
+                        parts, and inventory data to reduce downtime and improve overall
+                        efficiency and utilization
+                    </p>
+                    <div class="container text-center ">
+                        <div class="row">
+                            <div class="col-md-6 " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="green-btn"><strong>Build Efficiency</strong></button>
+                            </div>
+                            <div class="col-md-6  " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="gray-btn"><strong>
+                                        CHECK PRICING</strong></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/indor-tracking-762x426.png"
+                        alt="Image 7" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h1>Indoor tracking & temperature Monitoring</h1>
+                    </div>
+                    <p>
+                        Intelligent indoor tracking and positioning solutions that
+                        leverage a suite of Gofleet’s proprietary BLE asset tracking
+                        technology with a BLE beacon to provide an advanced and accurate
+                        real-time indoor location and positioning experience for
+                        organizations with an accuracy of 50 cm.
+                    </p>
+                    <div class="container text-center ">
+                        <div class="row">
+                            <div class="col-md-6 " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="green-btn"><strong>improve visibility</strong></button>
+                            </div>
+                            <div class="col-md-6  " style="padding-top: 5%; padding-bottom: 5%;">
+                                <button class="gray-btn"><strong>
+                                        CHECK PRICING</strong></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br><br><br>
+
+
+    <section class="four">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="hhh" style="margin-top: 60px;">
+            <h3 style=" color: green;">FLEET MANAGEMENT SYSTEM FOR YOUR INDUSTRY</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="side-menu">
+                <ul>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Construction_v2-1536x1024.jpg"
+                        data-title="Construction:"
+                        data-description="With the growth of urbanization and population density Construction companies are growing and expanding their operations geographically. They have to manage projects in different geographies with tighter deadlines and optimize the resources available to optimize operations. Adoption of digital technologies can increase productivity and operational efficiency of their on-site operations... More about Construction">
+                        <h5>Construction</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Government_v2-1536x1024.jpg"
+                        data-title="Government"
+                        data-description="GoFleet partners with Geotab which is registered with Sourcewell as a member. One of the benefits of partnering with Geotab means that we can offer our customers Geotab’s pre-negotiated agreement to offer governmental, educational, and non-profit entities various GPS tracking, engine diagnostics, as well as telematics solutions and accessories.... More about Government">
+                        <h5>Government</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Waste-Mnagement-min-rgb.jpg"
+                        data-title="Waste Management:"
+                        data-description="The urban waste collection process is very complex and requires a significant amount of resources as it grows. With the increasing adoption of digital technologies in utility management, the need for advanced technology is increasing rapidly for Waste management. Waste management companies can increase operational efficiency, cut costs, and enhance customer satisfaction with IoT... More about Waste Management">
+                        <h5>Waste Management</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Airport-min-rgb.jpg"
+                        data-title="Airports: "
+                        data-description=" As airports become more digitally connected, the Internet of Things (IoT) can present exciting opportunities. Airports can leverage IoT and Digital Technologies to transform their operations and make airport navigation easier, reducing anxiety related to baggage while enabling smart retail operations. This helps them in transforming their travelers' experience and generating new revenue... More about Airports">
+                        <h5>Airports</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/emergency-1536x1024.jpg"
+                        data-title="Emergency Response Solutions:"
+                        data-description="In Urban cities, which consist of little or no planned roads and intersections, there is a strong need to prioritize the passage of emergency vehicles. Adoption of Digital technologies can help utilities to provide priority passage and routing to such vehicles in extreme traffic conditions. It also enables connectivity with Network Hospitals to provide personalized training, and equipment available for treatment, thus creating a completely automated system... More about Emergency Response Solutions">
+                        <h5>Emergency Response Solutions</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Transportation-1536x1024.jpg"
+                        data-title="Transportation:"
+                        data-description="The Travel and Transportation industry is facing tremendous challenges to adapt to the ever-changing emissions norms and regulations of various geographies while operating profitably. The gradual transformation of travel and transportation means that organizations need to start to digitize their processes and planning to ensure long-term viability... More about Transportation">
+                        <h5>Transportation</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Forestry-1536x1024.jpg"
+                        data-title="Forestry"
+                        data-description=" Accidents and other common dangers associated with forest activities have increased in frequency and severity over time, especially without the use of a GPS tracking service. With the help of the Internet of Things (IoT) and other connected technologies, fleet managers can keep tabs on the vehicle location whereabouts, driving habits, and fuel consumption of Forest Service vehicles in real time. It also helps fleet managers to leverage valuable insights to better prepare for and carry out rescue operations.... More about Forestry">
+                        <h5>Forestry</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Winter-min-rgb-1536x1024.jpg"
+                        data-title="Winter:"
+                        data-description="Councils and local authorities have substantial operational challenges when performing highway maintenance during the winter months. An increase in the availability of IoT networks and their ease of deployment has led to governments adopting connected infrastructure which improves operational efficiency and enable sound business outcomes thus reducing rates of accidents and disruption to routes... More about Winter">
+                        <h5>Winter</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Agriculture-min-rgb-1536x1024.jpg"
+                        data-title="Agriculture: "
+                        data-description="Internet of Things (IoT)-enabled smart farming sensors, modules, and software help farmers fine-tune their responsiveness to crop and livestock variabilities through real-time data gathering and powerful insights. This enables farmers to transform their legacy operations and optimize their processes to enable sustainable and profitable crop growth... More about Agriculture">
+                        <h5>Agriculture</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Food-_-Beverage-min-rgb-1536x1024.jpg"
+                        data-title="Food and Beverage:"
+                        data-description="The Food and beverage industry is experiencing unprecedented difficulties. They need to address the ever-evolving stringent norms of FDA norms while managing customer behaviour and expectations. To rise to this challenge, cutting-edge technologies like AI and Digital Technologies offer critical advancements to help organizations adapt to the new normal... More about Food and Beverage">
+                        <h5>Food and Beverage</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/School-min-rgb-1536x1024.jpg"
+                        data-title="School Transportation:"
+                        data-description="The rising number of traffic accidents and crime rates has many parents worried about the security of their children while they are traveling on the school bus. With the adoption of IoT-based solutions, school buses have become more reliable and safer as parents can track the real-time positioning of their children. Bus operators can review the key details of operations enabling them to make informed decisions to increase productivity... More about School Transportation">
+                        <h5>School Transportation</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Healthcare-min-rgb-1536x1024.jpg"
+                        data-title="Health Care:"
+                        data-description="The global spread of the COVID-19 virus has increased the urgency for healthcare institutions to adopt digital innovation and implement technological solutions. The healthcare sector needs to transform its architecture, and key systems to unlock key insights. This can enable them to deliver health and human services remotely and drive improvements in cost and quality, innovation, and outcomes... More about Health Care">
+                        <h5>Health Care</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Delivery-min-rgb-1536x1024.jpg"
+                        data-title="Delivery:"
+                        data-description="The rising popularity of online shopping and doorstep delivery has increased the pressure on the logistics and delivery sector to improve its performance. This presents new possibilities for Delivery industries to adopt IoT and AI technologies to transform into digitally enabled, data-driven enterprise that delivers not only packages but an excellent experience... More about Delivery">
+                        <h5>Delivery</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Authority-Management_v2-1536x1024.jpg"
+                        data-title="Oil and Gas:"
+                        data-description="Comprehensive suite of solutions for organizations which leverages connected sensors and IoT to automate the time tracking operations of field workers, reporting, and compliance management of the drivers and back-office employees while making it easier for organisations to manage, collect and analyse critical employee data... More about Oil and Gas">
+                        <h5>Oil and Gas</h5>
+                    </li>
+                    <li data-image="https://www.gofleet.com/wp-content/uploads/2023/06/Public-Transportation-min-rgb-1536x1024.jpg"
+                        data-title="Public Transportation:"
+                        data-description="Adoption of Digital technologies and smart connected public transportation systems will enable transport operators to transform their fleet operations and further improve the passenger’s experience on public transit by offering real-time shuttle tracking, alerts and notifications in case of a critical event, and personalized travel news to passengers... More about Public Transportation">
+                        <h5>Public Transportation</h5>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="image-card">
+                <img id="image" src="https://www.gofleet.com/wp-content/uploads/2023/06/Construction_v2-1536x1024.jpg"
+                    alt="Image Card">
+                <h2 id="image-title">Construction:</h2>
+                <p id="image-description">With the growth of urbanization and population density Construction companies
+                    are growing and expanding their operations geographically. They have to manage projects in different
+                    geographies with tighter deadlines and optimize the resources available to optimize operations.
+                    Adoption of digital technologies can increase productivity and operational efficiency of their
+                    on-site operations... More about Construction</p>
+            </div>
+
+
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+
+                <div class="col">
+                    <button type="button" class="btn"><strong>START FREE TRIAL</strong></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+
+
+    <section class="five">
+        <div class="container-fluid">
+            <h2 style="text-align: center;  color: rgb(15, 109, 15);"><b>STAY AHEAD. JOIN OUR INDUSTRY UPDATES</b></h2>
+            <div class="row">
+                <div class="col-md-7 order-md-2">
+                    <div class="vid main-vid">
+                        <video class="" width="100%" height="auto" controls autoplay muted loop>
+                            <source src="https://cdn.pixabay.com/video/2021/10/03/90727-626984931_tiny.mp4">
+
+                        </video>
+
+
+                    </div>
+                    <div class="tri sub-video">
+                        <img src="https://img.youtube.com/vi/vjp0WdEp-eA/maxresdefault.jpg" class="" width="32.8%"
+                            height="auto">
+
+                        <img src="https://img.youtube.com/vi/BWRIe_QmDXU/maxresdefault.jpg" class="sub-video"
+                            width="32.8%" height="auto">
+
+                        <img src="https://img.youtube.com/vi/F3_U0_JIDR4/maxresdefault.jpg" class="sub-video"
+                            width="32.8%" height="auto">
+
+                    </div>
+
+                </div>
+                <div class="col-md-5">
+
+
+                    <h4>Manage and Track 100+ Assets in Real Time</h4>
+
+                    <h5 style="color: rgb(122, 115, 115); text-align: start; margin-top: auto;">GoFleet has helped us to
+                        drive innovation, productivity and sustainability across our fleet operations. It has now
+                        enabled us
+                        to manage and track assets and equipment’s in real-time across geographies and mitigate risks.
+                    </h5>
+
+                    <span>
+                        <div class="les"><img
+                                src="https://www.gofleet.com/wp-content/uploads/2023/06/Les-Anderson-529x550.png"
+                                width="120px" height="120px">
+
+                            <div class="lm">
+                                <h3 style="color: rgb(9, 95, 9);"><b>Les Anderson</b></h3>
+                                <h5 style="color: gray;">Recovery Manager</h5>
+                                <h5><b>Cascades Canada</b></h5>
+                            </div>
+
+                        </div>
+                        <img src="https://www.gofleet.com/wp-content/uploads/2023/06/Cascades_Inc_Logo.svg_-762x335.png"
+                            width="180vw" height="100vh" style="margin-top: 70px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+
+
+    <section class="six">
+        <div class="container-flex mt-4">
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/Burnbrae-farms-1.png"
+                        class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/odot-logo-transparent-1.png"
+                        class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/Aecon-Logo.png" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/download.png" class="img-fluid-4">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/speedy-transport.png"
+                        class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/Tolko_Logo-2019.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+
+
+    <section class="seven">
+        <div class="container-fluid mt-4">
+
+            <div class="row">
+                <div class="col-12 col-box">
+                    <img
+                        src="https://www.gofleet.com/wp-content/themes/dm-go-theme-2023/inc/assets/img/rating-google-trustpilot.png">
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 col-box">
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/fleet-tips-1-730x550.png" alt="Image 1"
+                        class="img-fluid" />
+                </div>
+                <div class="col-12 col-md-6 col-box">
+                    <div class="con">
+                        <h1 style="color: rgb(54, 134, 54);"><b>7 Tips For Fleet Managers in 2023</b></h1>
+                        <br>
+                        <h5 style="color: gray;">Interviews with fleet managers and data driven reports on how fleet
+                            managers are evolving their fleet's with new technology trends. Get the latest on how
+                            pandemic and uberization models are changing the way fleet's work.</h5>
+                        <br>
+                        <br>
+
+
+                        <a href="#"><b>Browse our educational whitepapers</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+
+
+    <section class="eight">
+        <h1 style="color: green;">Fleet Management Resources</h1>
+        <div class="container-fluid mt-5">
+
+            <div class="col-12 col-md-4 text-center">
+                <img src="https://www.gofleet.com/wp-content/uploads/2023/06/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working-1-1-649x550.jpg"
+                    class="img-fluid" alt="Image 1">
+                <br><br>
+                <a href="#">Preparing for the Canadian ELD mandate </a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <img src="https://www.gofleet.com/wp-content/uploads/2023/06/business-colleagues-discussing-together-office-night-teamwork-partnership-650x550.jpg"
+                    class="img-fluid" alt="Image 2">
+                <br><br>
+                <a href="#">The Top 5 Benefits of AI Dash Cams for Fleets </a>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <img src="https://www.gofleet.com/wp-content/uploads/2023/06/close-up-young-business-person-doing-internship-648x550.jpg"
+                    class="img-fluid" alt="Image 3">
+                <br><br>
+                <a href="#">Fleet Tracking: Insider Tips from GoFleet’s CEO </a>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <hr>
+    <section class="nine">
+        <div class="container-fluid mt-4">
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 col-box">
+                    <div class="bit">
+                        <p>Ready to get started?</p>
+                        <h1 style="color: rgb(54, 134, 54);"><b>JOIN THOUSANDS OF FLEETS RUNNING ON GOFLEET</b></h1>
+                        <br>
+                        <h5 style="color: gray;">Questions? Call us at email support@gofleet.com</h5>
+                        <p style="color: green;">+1.888.413.9060 </p>
+                        <br>
+                        <br>
+
+                        <button type="button" class="btn btn-success btn-lg">START FREE TRIAL</button>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-box">
+
+
+
+
+
+                    <img src="https://www.gofleet.com/wp-content/uploads/2023/06/truck-cta-2-v2-1024x439.png"
+                        alt="Image 1" class="img-fluid" />
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section class="end">
+        <div class="search-container">
+            <i class="bi bi-search search-icon"></i>
+            <input type="text" class="search-bar" placeholder="I'm looking for" aria-label="Search">
+        </div>
+
+        <footer class="text-center">
+            <div class="go text-start">
+                <img src="https://www.gofleet.com/wp-content/uploads/2023/06/gofleet-white.png">
+            </div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-3 footer-column text-start">
+                        <h5>Industries</h5>
+                        <ul class="list-unstyled " style="text-align: start;">
+                            <li>Waste Management</li>
+                            <li>Airports</li>
+                            <li>Emergency Response Solutions</li>
+                            <li>Transportation</li>
+                            <li>Forestry</li>
+                            <li>Agriculture</li>
+                            <li>Food and Beverage</li>
+                            <li>School Transportation</li>
+                            <li>Health Care</li>
+                            <li>Delivery</li>
+                            <li>Oil and Gas</li>
+                            <li>Public Transportation</li>
+                            <li>Winter</li>
+                            <li>Construction</li>
+                            <li>Sourcewell</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-column  text-start">
+                        <h5>Products</h5>
+                        <ul class="list-unstyled" style="text-align: start;">
+                            <li>ZenduCAM Z6 Dash Camera</li>
+                            <li>Mobile Dispatch</li>
+                            <li>GO9 GPS Vehicle Tracking Device</li>
+                            <li>Zendu Maintenance</li>
+                            <li>Geotab Drive ELD</li>
+                            <li>ZenBeacon</li>
+                            <li>Mobileye</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-column  text-start">
+                        <h5>Solutions</h5>
+                        <ul class="list-unstyled" style="text-align: start;">
+                            <li>Telematics Platform</li>
+                            <li>Dash Cameras and AI</li>
+                            <li>ELD & Driver Apps</li>
+                            <li>Work, Routing & Dispatch</li>
+                            <li>Asset Monitoring & Cold Chain</li>
+                            <li>OEM & Car Sharing</li>
+                            <li>Fuel & Maintenance</li>
+                            <li>Driver Training</li>
+                            <li>Indoor Tracking</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-column  text-start">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled" style="text-align: start;">
+                            <li>Blog</li>
+                            <li>Press Releases</li>
+                            <li>Success Stories</li>
+                            <li>White Papers</li>
+                            <li>Videos</li>
+                            <li>ROI Calculator</li>
+                            <li>Compare Systems</li>
+                            <li>Sitemap</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <hr style="border: solid 1px rgb(255, 255, 255);">
+                <br>
+
+                <div class="row">
+                    <div class="col-md-3 footer-column text-start">
+                        <h5>Company</h5>
+                        <ul class="list-unstyled " style="text-align: start;">
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Reseller</li>
+                            <li>Referral</li>
+                            <li>Contact Us</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-column  text-start">
+                        <h5>Support & Legal</h5>
+                        <ul class="list-unstyled" style="text-align: start;">
+                            <li>Support</li>
+                            <li>Privacy Policy</li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-column  text-start">
+                        <h5>Contact</h5>
+                        <ul class="list-unstyled" style="text-align: start;">
+                            <li>747 Third Avenue, 1st Floor, Manhattan, New York 10017, USA</li>
+                            <br>
+                            <li>2355 Skymark Ave, 1st Floor, Mississauga, ON L4W 4Y6, Canada</li>
+                            <br>
+                            <li>Building 8W – Unit 562, Block A, Dubai Airport Freezone, Dubai, UAE</li>
+                            <br>
+                            <li style="text-decoration: underline;">UAE Website</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-column  text-start">
+                        <h5>Social</h5>
+                        <ul class="list-unstyled" style="text-align: start; display: flex; gap: 20px;">
+                            <li class="icon"><ion-icon name="logo-facebook"></ion-icon></li>
+                            <li class="icon"><ion-icon name="logo-youtube"></ion-icon></li>
+                            <li class="icon"><ion-icon name="logo-linkedin"></ion-icon></li>
+                            <li class="icon"><ion-icon name="logo-twitter"></ion-icon></li>
+
+                        </ul>
+                    </div>
+                    <hr style="border: solid 1px white;">
+                </div>
+                <div class="row">
+                    <div class="col-12 text-start">
+                        <h4 style="color: rgb(6, 78, 6);">The GoFleet Difference</h4>
+                        <h6>We don’t just provide another GPS fleet tracking system. We are in the business of providing
+                            you
+                            a solution. Our fleet consultants work with you to understand your business. We help you
+                            implement solutions based on everyday pain areas and industry best practices. Of course it
+                            helps
+                            having the industry’s most powerful and reliable GPS vehicle tracking system, but the real
+                            difference is made in our customer service. Let us show you the GoFleet difference.</h6>
+
+                        <p>Copyright © 2024 GoFleet Tracking</p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        const menuItems = document.querySelectorAll('.side-menu li');
+        const imageCard = document.getElementById('image');
+        const imageTitle = document.getElementById('image-title');
+        const imageDescription = document.getElementById('image-description');
+
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                const newImage = item.getAttribute('data-image');
+                const newTitle = item.getAttribute('data-title');
+                const newDescription = item.getAttribute('data-description');
+
+                imageCard.src = newImage;
+                imageTitle.textContent = newTitle;
+                imageDescription.textContent = newDescription;
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet">
+</body>
+
+</html>
